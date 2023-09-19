@@ -6,26 +6,28 @@ export default function BasicWrapper({ width, height, backgroundColor }) {
   const onColorChage = (backgroundColor) => {
     switch (backgroundColor) {
       case "pink":
-        return "#FFFFFF";
-      case "skyBlue":
-        return "#000000";
+        return setColorCode("#F6C8FB");
+      case "babyPink":
+        return setColorCode("#E784F2");
+      case "blueSky":
+        return setColorCode("718DF2");
+      case "jade":
+        return setColorCode("#84FCED");
+      case "violet":
+        return setColorCode("#9740F6");
       default:
-        break;
+        return etColorCode("#F6C8FB");
     }
   };
 
   return (
-    <div>
-      <button
-        style={{
-          width: "120px",
-          height: "30px",
-          backgroundColor: onColorChage(),
-          borderRadius: "5px",
-        }}
-      >
-        {buttonName}
-      </button>
-    </div>
+    <div
+      style={{
+        width: width,
+        height: height,
+        backgroundColor: onColorChage(backgroundColor),
+        borderRadius: "5px",
+      }}
+    ></div>
   );
 }
