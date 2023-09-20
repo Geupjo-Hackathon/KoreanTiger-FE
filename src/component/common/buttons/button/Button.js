@@ -13,7 +13,7 @@ import * as Styled from "./style";
  * @param {'button' | 'submit' | 'reset'=} buttonProps.type - type
  */
 
-export default function button({ buttonProps }) {
+export default function Button({ buttonProps }) {
   const {
     sizeStyles,
     themeStyle,
