@@ -10,27 +10,27 @@ import Test from "@/components/student/main/Test";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-3 grid-rows-5 gap-0 max-h-screen min-w-screen p-4">
-      <div className="col-span-1 row-span-1 flex p-4">
+    <div className="grid grid-cols-3 grid-rows-5 gap-0 max-h-screen min-w-screen p-[0.8rem]">
+      <div className="col-span-1 row-span-1 flex p-[0.8rem]">
         <Profile />
       </div>
-      <div className="col-span-1 row-span-3 p-4">
+      <div className="col-span-1 row-span-3 p-[0.8rem]">
         <Learning />
       </div>
-      <div className="col-span-1 row-span-1 p-4">
+      <div className="col-span-1 row-span-1 px-[0.8rem] pb-[0.8rem]">
         <Alert />
         <Attendance />
       </div>
-      <div className="col-span-1 row-span-2 p-4">
+      <div className="col-span-1 row-span-2 p-[0.8rem]">
         <Ranking />
       </div>
-      <div className="col-span-1 row-span-3 p-4">
+      <div className="col-span-1 row-span-3 p-[0.8rem]">
         <Progress />
       </div>
-      <div className="col-span-2 row-span-2 p-4">
+      <div className="col-span-2 row-span-2 p-[0.8rem]">
         <Timeline />
       </div>
-      <div className="col-span-1 row-span-1 flex flex-row p-4">
+      <div className="col-span-1 row-span-1 flex flex-row p-[0.8rem]">
         <Test />
       </div>
     </div>
