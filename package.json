@@ -13,16 +13,24 @@
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.5",
-    "autoprefixer": "^10.4.16",
+    "@types/node": "20.6.2",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
     "axios": "^1.2.2",
-    "next": "13.1.1",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "notistack": "^3.0.1",
+    "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
     "react-hook-form": "^7.41.5",
     "react-query": "^3.39.2",
     "sharp": "^0.31.3",
     "swiper": "^8.4.5",
-    "typescript": "^4.9.4"
+    "typescript": "5.2.2"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
@@ -41,6 +49,16 @@
     "eslint-plugin-react": "^7.31.11",
     "prettier": "^2.8.0",
     "tailwindcss": "^3.2.4",
-    "twin.macro": "^3.1.0"
+    "twin.macro": "^3.1.0",
+    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-interactions": "^7.4.2",
+    "@storybook/addon-links": "^7.4.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.2",
+    "@storybook/nextjs": "^7.4.2",
+    "@storybook/react": "^7.4.2",
+    "@storybook/testing-library": "^0.2.1",
+    "eslint-plugin-storybook": "^0.6.13",
+    "storybook": "^7.4.2"
   }
 }
