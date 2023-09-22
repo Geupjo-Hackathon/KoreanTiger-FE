@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const withTwin = require('./withTwin.js');
 
-module.exports = nextConfig
+const nextConfig = {};
+
+module.exports = withTwin(nextConfig);
