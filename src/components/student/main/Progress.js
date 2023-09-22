@@ -3,8 +3,7 @@ import { Button } from "@/stories/Button";
 
 const Progress = () => {
   return (
-    <div>
-      {" "}
+    <div className="w-full h-full" style={{ backgroundColor: "white" }}>
       <p>주간 나의 성취도</p>
       <div>progress bar</div>
       <div>

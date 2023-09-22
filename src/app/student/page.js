@@ -1,36 +1,36 @@
 "use client";
-import Profile from "@/component/common/profile/Profile";
-import Learning from "@/component/student/main/Learning";
-import Alert from "@/component/common/alert/Alert";
-import Attendance from "@/component/student/main/Attendance";
-import Ranking from "@/component/student/main/Ranking";
-import Progress from "@/component/student/main/Progress";
-import Timeline from "@/component/student/main/Timeline";
-import Test from "@/component/student/main/Test";
+import Profile from "@/components/common/profile/Profile";
+import Learning from "@/components/student/main/Learning";
+import Alert from "@/components/common/alert/Alert";
+import Attendance from "@/components/student/main/Attendance";
+import Ranking from "@/components/student/main/Ranking";
+import Progress from "@/components/student/main/Progress";
+import Timeline from "@/components/student/main/Timeline";
+import Test from "@/components/student/main/Test";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-3 grid-rows-5 gap-0 min-h-screen min-w-screen">
-      <div className="col-span-1 row-span-1 border flex">
+    <div className="grid grid-cols-3 grid-rows-5 gap-0 max-h-screen min-w-screen p-4">
+      <div className="col-span-1 row-span-1 flex p-4">
         <Profile />
       </div>
-      <div className="col-span-1 row-span-3 border">
+      <div className="col-span-1 row-span-3 p-4">
         <Learning />
       </div>
-      <div className="col-span-1 row-span-1 border">
+      <div className="col-span-1 row-span-1 p-4">
         <Alert />
         <Attendance />
       </div>
-      <div className="col-span-1 row-span-2 border">
+      <div className="col-span-1 row-span-2 p-4">
         <Ranking />
       </div>
-      <div className="col-span-1 row-span-2 border">
+      <div className="col-span-1 row-span-3 p-4">
         <Progress />
       </div>
-      <div className="col-span-2 row-span-2 border">
+      <div className="col-span-2 row-span-2 p-4">
         <Timeline />
       </div>
-      <div className="col-span-1 row-span-2 border flex flex-row">
+      <div className="col-span-1 row-span-1 flex flex-row p-4">
         <Test />
       </div>
     </div>

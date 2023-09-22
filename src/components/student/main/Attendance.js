@@ -2,7 +2,7 @@ import React from "react";
 
 const Attendance = () => {
   return (
-    <div className="flex">
+    <div className="w-full h-full flex" style={{ backgroundColor: "white" }}>
       <div>TUE</div>
       <div className="flex flex-col">
         <p>00일 연속 출석체크</p>

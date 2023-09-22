@@ -2,7 +2,7 @@ import React from "react";
 
 const Timeline = () => {
   return (
-    <div>
+    <div className="w-full h-full" style={{ backgroundColor: "white" }}>
       <div>
         <p>2023년</p>
       </div>

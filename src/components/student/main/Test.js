@@ -2,7 +2,7 @@ import React from "react";
 
 const Test = () => {
   return (
-    <div>
+    <div className="w-full h-full" style={{ backgroundColor: "white" }}>
       <p></p>
       <div className="flex flex-row">
         <div>image</div>

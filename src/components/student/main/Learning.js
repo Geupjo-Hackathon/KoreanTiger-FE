@@ -3,7 +3,7 @@ import { Button } from "@/stories/Button";
 
 const Learning = () => {
   return (
-    <div>
+    <div className="w-full h-full" style={{ backgroundColor: "white" }}>
       <p>나의 마지막 학습</p>
       <Button
         primary={true}
