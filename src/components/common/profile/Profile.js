@@ -11,7 +11,7 @@ const Profile = () => {
 
   // const getProfile = async () => {
   //   const response = await fetch(
-  //     `${process.env.BASE_URL}/studentLMS/experience`
+  //     `${process.env.BASE_URL}/studentLms/experience`
   //   );
   //   const jsonData = await response.json();
   //   console.log(jsonData);
@@ -50,7 +50,7 @@ const Profile = () => {
           </div>
         )}
         <div className="flex flex-row items-center">
-          <AiFillStar className="text-base mr-2" onClick={() => getUsers()} />
+          <AiFillStar className="text-base mr-2" />
           <p>0일 연속 접속</p>
         </div>
       </div>
