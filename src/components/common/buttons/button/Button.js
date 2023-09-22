@@ -1,57 +1,44 @@
+import React from "react";
 import Link from "next/link";
+import { StyledButton } from "./style";
 
-import * as Styled from "./style";
-
-/*
-공통 버튼 컴포넌트
-*/
-
-/**
- * @param {xs || sm || md} buttonProps.sizeStyles - 버튼 사이즈
- * @param {pink || hotPink || blue || violet || jade} buttonProps.height - 버튼 높이
- * @param {boolean=} buttonProps.disabled - disabled
- * @param {'button' | 'submit' | 'reset'=} buttonProps.type - type
- */
-
-export default function Button({ buttonProps }) {
-  const {
-    sizeStyles,
-    themeStyle,
-    disabled,
-    onClick,
-    href,
-    type,
-    target,
-    buttonName,
-    style,
-  } = buttonProps;
-
+export default function Button({
+  sizeStyles,
+  themeStyle,
+  disabled,
+  onClick,
+  href,
+  type,
+  target,
+  buttonName,
+  style,
+}) {
   if (href) {
     return (
-      <Link href={href} target={target} passHref>
-        <Styled.Button
+      <Link href={href} passHref>
+        <StyledButton
           style={style}
           sizeStyles={sizeStyles}
-          themeStyle={themeStyle}
+          colorTheme={themeStyle}
           disabled={disabled}
           onClick={onClick}
           type={type}
         >
           {buttonName}
-        </Styled.Button>
+        </StyledButton>
       </Link>
     );
   }
   return (
-    <Styled.Button
+    <StyledButton
       style={style}
       sizeStyles={sizeStyles}
-      themeStyle={themeStyle}
+      colorTheme={themeStyle}
       disabled={disabled}
       onClick={onClick}
       type={type}
     >
       {buttonName}
-    </Styled.Button>
+    </StyledButton>
   );
 }

@@ -1,4 +1,4 @@
-import { theme, styled, css } from "twin.macro";
+import styled, { css } from "styled-components";
 
 /**
  * 버튼 기본 스타일
@@ -29,111 +29,60 @@ export const sizeStyles = {
     min-width: 20px;
     height: 20px;
     padding: 0 10px;
-    font: ${theme`typography.medium_12`};
+    font-size: 12px;
   `,
   sm: css`
     width: auto;
     min-width: 30px;
     height: 30px;
     padding: 0 10px;
-    font: ${theme`typography.medium_15`};
+    font-size: 15px;
   `,
   md: css`
     width: auto;
     min-width: 40px;
     padding: 0 10px;
     height: 40px;
-    font: ${theme`typography.medium_15`};
+    font-size: 15px;
   `,
 };
 
 /**
- * 버튼스타일 (bg-color, border-color, font-color)
+ * 버튼 스타일 (bg-color, border-color, font-color)
  */
-const variantStyles = {
+export const variantStyles = {
   default: {
     pink: css`
-      background-color: ${theme`colors.pink_F6C8FB`};
-      color: ${theme`colors.basic_FFFFFF`};
+      background-color: #f6c8fb;
+      color: #ffffff;
       &:hover {
-        background-color: ${theme`colors.hover_FEF3FF`};
-        color: ${theme`colors.basic_000000`};
+        background-color: #fef3ff;
+        color: #000000;
       }
-
       &:disabled {
-        background-color: ${theme`colors.dis_EEEEEE`};
-        color: ${theme`colors.dis_CCCCCC`};
-        pointer-events: none;
-      }
-    `,
-    hotPink: css`
-      background-color: ${theme`colors.hotpink_E784F2`};
-      color: ${theme`colors.basic_FFFFFF`};
-
-      &:hover {
-        background-color: ${theme`colors.hover_E5AFEB`};
-        color: ${theme`colors.basic_000000`};
-      }
-
-      &:disabled {
-        border-color: ${theme`colors.dis_EEEEEE`};
-        color: ${theme`colors.dis_CCCCCC`};
-        pointer-events: none;
-      }
-    `,
-    blue: css`
-      background-color: ${theme`colors.blue_718DF2`};
-      color: ${theme`colors.basic_FFFFFF`};
-
-      &:hover {
-        border-color: ${theme`colors.BCC6EC`};
-        color: ${theme`colors.basic_FFFFFF`};
-      }
-
-      &:disabled {
-        border-color: ${theme`colors.dis_EEEEEE`};
-        color: ${theme`colors.dis_CCCCCC`};
-        pointer-events: none;
-      }
-    `,
-    jade: css`
-      background-color: ${theme`colors.jade_84FCED`};
-      color: ${theme`colors.basic_FFFFFF`};
-
-      &:hover {
-        border-color: ${theme`colors.hover_C7EEE9`};
-        color: ${theme`colors.basic_FFFFFF`};
-      }
-
-      &:disabled {
-        border-color: ${theme`colors.dis_EEEEEE`};
-        color: ${theme`colors.dis_CCCCCC`};
-        pointer-events: none;
-      }
-    `,
-    violet: css`
-      background-color: ${theme`colors.violet_9740F6`};
-      color: ${theme`colors.basic_FFFFFF`};
-
-      &:hover {
-        border-color: ${theme`colors.hover_D9C3F1`};
-        color: ${theme`colors.basic_FFFFFF`};
-      }
-
-      &:disabled {
-        border-color: ${theme`colors.dis_EEEEEE`};
-        color: ${theme`colors.dis_CCCCCC`};
+        background-color: #eeeeee;
+        color: #cccccc;
         pointer-events: none;
       }
     `,
   },
+  hotPink: css`
+    background-color: #e784f2;
+    color: #ffffff;
+    &:hover {
+      background-color: #e5afeb;
+      color: #000000;
+    }
+    &:disabled {
+      border-color: #eeeeee;
+      color: #cccccc;
+      pointer-events: none;
+    }
+  `,
 };
 
-export const Button = styled.button`
-  /* base style */
+export const StyledButton = styled.button`
   ${buttonBaseStyle}
-  /* size Style */
   ${(props) => sizeStyles[props.size]}
-  /* variant Style */
-  ${(props) => variantStyles[props.colorTheme][props.variant]}
+  ${(props) => variantStyles.default[props.colorTheme]}
 `;

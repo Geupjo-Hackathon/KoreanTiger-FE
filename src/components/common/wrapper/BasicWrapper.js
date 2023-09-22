@@ -10,13 +10,13 @@ export default function BasicWrapper({ width, height, backgroundColor }) {
       case "babyPink":
         return setColorCode("#E784F2");
       case "blueSky":
-        return setColorCode("718DF2");
+        return setColorCode("#718DF2");
       case "jade":
         return setColorCode("#84FCED");
       case "violet":
         return setColorCode("#9740F6");
       default:
-        return etColorCode("#F6C8FB");
+        return setColorCode("#F6C8FB");
     }
   };
 

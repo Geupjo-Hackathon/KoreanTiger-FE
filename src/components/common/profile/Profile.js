@@ -1,9 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 import color from "@/tailwind-theme/color";
+import { usePathname } from "next/navigation";
+import StudentProfileProgress from "@/components/student/profile/StudentProfileProgress";
 
 const Profile = () => {
+  const username = "test";
+  const school = "test고등학교";
+
   // const getProfile = async () => {
   //   const response = await fetch(
   //     `${process.env.BASE_URL}/studentLMS/experience`
@@ -15,6 +20,13 @@ const Profile = () => {
   // useEffect(() => {
   //   getProfile();
   // }, []);
+  const [isStudent, setIsStudent] = useState(false);
+  const pathname = usePathname();
+  console.log(pathname);
+  console.log(isStudent);
+  useEffect(() => {
+    pathname.includes("/student") ? setIsStudent(true) : setIsStudent(false);
+  }, []);
 
   return (
     <div
@@ -26,20 +38,17 @@ const Profile = () => {
         {/* <Image src={} alt="프로필 이미지"/> */}
       </div>
       <div className="w-2/3 h-full flex flex-col">
-        <span className="text-lg">이름</span>
-        <div
-          className="w-full h-6 bg-gray-200 rounded-lg"
-          style={{ backgroundColor: "gray" }}
-        >
-          <div
-            className="h-6 rounded-lg"
-            style={{ width: "45%", backgroundColor: "black" }}
-          ></div>
-        </div>
-        <div className="w-1/2 flex justify-between">
-          <span>레벨 LV</span>
-          <span>단계</span>
-        </div>
+        {isStudent ? (
+          <div>
+            <span className="text-lg">{username}</span>
+            <StudentProfileProgress />
+          </div>
+        ) : (
+          <div>
+            <span className="text-lg">{username} 선생님</span>
+            <div>{school}</div>
+          </div>
+        )}
         <div className="flex flex-row items-center">
           <AiFillStar className="text-base mr-2" onClick={() => getUsers()} />
           <p>0일 연속 접속</p>
