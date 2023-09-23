@@ -37,13 +37,13 @@ const RadarChart = () => {
 const Hexagon = () => {
   return (
     <div
-      className="w-full mt-[1.6rem] h-full flex flex-col p-4"
+      className="w-full mt-[1.6rem] flex flex-col p-4"
       style={{
         backgroundColor: "white",
       }}
     >
       <p className="text-lg">영역별 분석</p>
-      <div className="h-[20rem] mt-4">
+      <div className="h-[18rem] mt-4">
         <RadarChart />
       </div>
     </div>
