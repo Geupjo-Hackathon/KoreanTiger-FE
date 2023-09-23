@@ -40,8 +40,8 @@ const Learning = () => {
           backgroundColor={isHovered && color.violet_9740F6}
           size="large"
           label={data && data.title}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
         />
       </div>
       <div className="h-3/4 flex flex-col p-2">
@@ -52,32 +52,32 @@ const Learning = () => {
             backgroundColor={isHovered && color.violet_9740F6}
             size="large"
             label="정보라는 건 뭘까?"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            // onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
           />
           <Button
             primary={true}
             backgroundColor={isHovered && color.violet_9740F6}
             size="large"
             label="프로그래밍이란?"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            // onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
           />
           <Button
             primary={true}
             backgroundColor={isHovered && color.violet_9740F6}
             size="large"
             label="컴퓨터를 이루는 0과 1에 대해 알아보자!"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            // onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
           />
           <Button
             primary={true}
             backgroundColor={isHovered && color.violet_9740F6}
             size="large"
             label="호랑 프로그래밍 응용"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            // onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
           />
         </div>
       </div>
