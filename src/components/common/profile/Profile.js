@@ -25,8 +25,10 @@ const Profile = () => {
   console.log(pathname);
   console.log(isStudent);
   useEffect(() => {
-    pathname.includes("/student") ? setIsStudent(true) : setIsStudent(false);
-  }, []);
+    setIsStudent(pathname.includes("/student"));
+
+    // pathname.includes("/student") ? setIsStudent(true) : setIsStudent(false);
+  }, [pathname]);
 
   return (
     <div
