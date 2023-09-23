@@ -39,21 +39,19 @@ const Profile = () => {
         </div>
       </div>
       <div className="w-3/5 h-full flex flex-col">
+        <div>
+          <span className="text-3xl font-bold">{data && data.name}</span>
+        </div>
         {isStudent ? (
-          <div>
-            <span className="text-3xl font-bold">{data && data.name}</span>
+          <div className="flex flex-row">
+            <p className="mr-4">레벨 LV{data && data.experience}</p>
+            <p>{data && data.title}</p>
           </div>
         ) : (
-          <div>
-            <span className="text-3xl font-bold">
-              {data && data.name} 선생님
-            </span>
+          <div className="flex flex-row">
+            <p className="mr-4">호랑 초등학교</p>
           </div>
         )}
-        <div className="flex flex-row">
-          <p className="mr-4">레벨 LV{data && data.experience}</p>
-          <p>{data && data.title}</p>
-        </div>
         <div className="flex flex-row items-center">
           <p>{data && data.connection}일 연속 접속</p>
         </div>

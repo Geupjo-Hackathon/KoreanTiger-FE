@@ -14,7 +14,7 @@ export default function Home() {
       <div className="col-span-1 row-span-6 p-4">
         <MyClass />
       </div>
-      <div className="col-span-1 p-4" style={{ height: "805px" }}>
+      <div className="col-span-1 p-4">
         <Alert />
         <StudentReport />
       </div>
