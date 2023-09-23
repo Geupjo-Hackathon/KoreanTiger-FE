@@ -41,17 +41,20 @@ const Progress = () => {
   };
 
   useEffect(() => {
-    getProgress();
+    // getProgress();
   }, []);
 
   return (
     <div
-      className="w-full h-full p-6 flex flex-col justify-between"
-      style={{ backgroundColor: "white" }}
+      className="w-full h-full p-6 flex flex-col justify-between border-2 rounded-md"
+      style={{ backgroundColor: "white", borderColor: color.hover_D9C3F1 }}
     >
       <div>
-        <p className="text-2xl mb-4 font-bold">주간 나의 성취도</p>
-        <div className="w-full h-10 mb-2" style={{ backgroundColor: "gray" }}>
+        <p className="text-2xl mb-4 font-bold">주간 성취도</p>
+        <div
+          className="w-full h-11 mb-2 border-2"
+          style={{ borderColor: color.violet_9740F6 }}
+        >
           <div
             className="h-10"
             style={{
@@ -62,7 +65,8 @@ const Progress = () => {
                   data.lastWeek.completeLectureCount) *
                   100
               }%`,
-              backgroundColor: "black",
+              width: "50%",
+              backgroundColor: color.hover_D9C3F1,
             }}
           ></div>
         </div>
