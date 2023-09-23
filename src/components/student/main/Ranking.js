@@ -66,8 +66,9 @@ const Ranking = () => {
             </tr>
           </thead>
           <tbody>
-            {data && isAll
-              ? data.totalRanking.map((d, index) => {
+            {isAll
+              ? data &&
+                data.totalRanking.map((d, index) => {
                   return (
                     <tr
                       key={d.ranking}
@@ -84,7 +85,8 @@ const Ranking = () => {
                     </tr>
                   );
                 })
-              : data.SchoolRanking.map((d, index) => {
+              : data &&
+                data.SchoolRanking.map((d, index) => {
                   return (
                     <tr
                       key={d.ranking}
