@@ -32,7 +32,7 @@ const Profile = () => {
 
   return (
     <div
-      className="w-full h-full flex flex-row justify-between p-4"
+      className="w-full h-32 flex flex-row justify-between p-4"
       style={{ backgroundColor: "white" }}
     >
       <div className="w-1/3 h-full flex justify-center items-center">
