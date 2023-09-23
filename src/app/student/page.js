@@ -10,7 +10,10 @@ import Test from "@/components/student/main/Test";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-3 grid-rows-5 gap-0 max-h-screen min-w-screen p-[0.8rem]">
+    <div
+      className="grid grid-cols-3 grid-rows-5 gap-0 max-h-screen min-w-screen p-[0.8rem]"
+      style={{ minHeight: "calc(100vh - 1.6rem)" }}
+    >
       <div className="col-span-1 row-span-1 flex p-[0.8rem]">
         <Profile />
       </div>
