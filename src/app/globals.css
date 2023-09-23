@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(241, 241, 245);
     font-size: 1.125rem;
     color: #2d363f;
     line-height: 1.75rem;
