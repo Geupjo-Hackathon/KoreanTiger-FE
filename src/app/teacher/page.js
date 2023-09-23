@@ -1,11 +1,10 @@
 "use client";
 import Profile from "@/components/common/profile/Profile";
-import Learning from "@/components/student/main/Learning";
+import MyClass from "@/components/teacher/main/MyClass";
 import Alert from "@/components/common/alert/Alert";
 import Attendance from "@/components/student/main/Attendance";
 import Assignment from "@/components/teacher/main/Assignment";
 import Progress from "@/components/student/main/Progress";
-import Timeline from "@/components/student/main/Timeline";
 import Test from "@/components/student/main/Test";
 
 export default function Home() {
@@ -14,14 +13,14 @@ export default function Home() {
       <div className="col-span-1 row-span-1 flex p-4">
         <Profile />
       </div>
-      <div className="col-span-1 row-span-3 p-4">
-        <Learning />
+      <div className="col-span-1 row-span-6 p-4">
+        <MyClass />
       </div>
       <div className="col-span-1 row-span-1 p-4">
         <Alert />
         <Attendance />
       </div>
-      <div className="col-span-1 row-span-4 p-4">
+      <div className="col-span-1 row-span-6 p-4">
         <Assignment />
       </div>
       <div className="col-span-1 row-span-3 p-4">
