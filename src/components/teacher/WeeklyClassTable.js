@@ -1,43 +1,31 @@
 import React from "react";
+import WeeklyClassTableInner from "@/components/teacher/WeeklyClassTableInner";
 
 export default function WeeklyClassTable() {
   return (
-    <div>
+    <div className="col-span-1 row-span-1 p-4">
+      <div>
+        <div style={{ fontSize: "18px" }}>시간표</div>
+      </div>
       <table>
         <thead>
           <tr>
             <td></td>
-            <td>월</td>
+            <td
+              style={{
+                width: "50px",
+                height: "50px",
+              }}
+            >
+              월
+            </td>
             <td>화</td>
             <td>수</td>
             <td>목</td>
             <td>금</td>
           </tr>
-          <tr>
-            <td>1교시</td>
-          </tr>
-          <tr>
-            <td>2교시</td>
-          </tr>{" "}
-          <tr>
-            <td>3교시</td>
-          </tr>{" "}
-          <tr>
-            <td>4교시</td>
-          </tr>{" "}
-          <tr>
-            <td>5교시</td>
-          </tr>{" "}
-          <tr>
-            <td>6교시</td>
-          </tr>{" "}
-          <tr>
-            <td>7교시</td>
-          </tr>{" "}
-          <tr>
-            <td>8교시</td>
-          </tr>{" "}
         </thead>
+        <WeeklyClassTableInner />
       </table>
     </div>
   );
