@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 // Component
 import { Button } from "@/stories/Button";
+// Style
+import { color } from "chart.js/helpers";
 
 const Learning = () => {
   const [isHovered, setIsHovered] = useState(false);
