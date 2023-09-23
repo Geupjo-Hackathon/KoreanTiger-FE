@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@/stories/Button";
 // Style
 import color from "@/tailwind-theme/color";
+import Link from "next/link";
 
 const Progress = () => {
   const [data, setData] = useState({
@@ -16,10 +17,7 @@ const Progress = () => {
       totalLearningTime: 0,
       completeLectureCount: 0,
     },
-    meta: {
-      date: "2023-09-23",
-      achievementRate: "0",
-    },
+    date: "2023-09-23",
   });
   const [isHovered, setIsHovered] = useState(false);
 
@@ -37,11 +35,10 @@ const Progress = () => {
     );
     const jsonData = await response.json();
     setData(jsonData.data);
-    console.log(jsonData.data);
   };
 
   useEffect(() => {
-    // getProgress();
+    getProgress();
   }, []);
 
   return (
@@ -107,7 +104,7 @@ const Progress = () => {
       </div>
       <div>
         <p>
-          {data.meta.date.split("-")[0]}년도 {data.thisWeek.weekOfMonth}주차는{" "}
+          {data.date.split("-")[0]}년도 {data.thisWeek.weekOfMonth}주차는{" "}
           {data.lastWeek.weekOfMonth}주차와 비교했을 때
         </p>
         <p>
@@ -123,14 +120,16 @@ const Progress = () => {
         <p className="mb-2 text-sm" style={{ color: color.violet_9740F6 }}>
           더 정확한 정보를 보려면 더보기 버튼을 눌러주세요
         </p>
-        <Button
-          primary={true}
-          backgroundColor={isHovered && color.violet_9740F6}
-          size="large"
-          label="더보기"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
+        <Link href={"/student/report"}>
+          <Button
+            primary={true}
+            backgroundColor={isHovered && color.violet_9740F6}
+            size="large"
+            label="더보기"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+        </Link>
       </div>
     </div>
   );
