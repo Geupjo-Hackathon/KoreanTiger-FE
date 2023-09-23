@@ -1,7 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+// Component
 import { Button } from "@/stories/Button";
 
 const Attendance = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   // const getAttendance = async () => {
   //   const response = await fetch(`${process.env.BASE_URL}/studentLms/check-in`);
   //   const jsonData = await response.json();
@@ -25,9 +35,11 @@ const Attendance = () => {
         <p className="text-lg">00일 연속 출석체크</p>
         <Button
           primary={true}
-          backgroundColor="blue"
+          backgroundColor={isHovered && color.violet_9740F6}
           size="medium"
           label="오늘의 출석체크하기"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         />
       </div>
     </div>
