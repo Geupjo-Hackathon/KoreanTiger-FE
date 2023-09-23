@@ -13,7 +13,7 @@ export default function Home() {
       class="grid grid-cols-3 grid-rows-9 gap-0 max-h-screen min-w-screen p-[0.8rem]"
       style={{ minHeight: "calc(100vh - 1.6rem)" }}
     >
-      <div class="col-span-1 row-span-4 p-[0.8rem] flex flex-col justify-between">
+      <div class="col-span-1 row-span-4 p-[0.8rem] flex flex-col justify-between h-3/4">
         <Profile />
         <Hexagon />
       </div>
@@ -24,11 +24,11 @@ export default function Home() {
         <Alert />
         <Report />
       </div>
-      <div class="col-span-2 row-span-6 p-[0.8rem]">
-        <Analysis />
-      </div>
-      <div class="col-span-1 row-span-5 p-[0.8rem]">
+      <div class="col-span-1 col-start-1 row-start-5 row-span-5 p-[0.8rem] h-[14rem]">
         <GoodBad />
+      </div>
+      <div class="col-span-2 col-start-2 row-start-4 row-span-6 p-[0.8rem]">
+        <Analysis />
       </div>
     </div>
   );
