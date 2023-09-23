@@ -3,17 +3,50 @@ import ClassFilter from "./ClassFilter";
 import Button from "@/components/common/buttons/button";
 import { sizeStyles } from "../common/buttons/button/style";
 
-export default function SubjectList() {
+export default function SubjectList({ classInfo }) {
   return (
     <div>
-      <ClassFilter />
-      <table>
+      <table style={{ margin: "10px" }}>
         <thead>
           <tr>
-            <td style={{ width: "40%", border: "1px solid black" }}></td>
-            <td style={{ width: "35%", border: "1px solid black" }}>과제 명</td>
-            <td style={{ width: "35%", border: "1px solid black" }}>과제 강</td>
-            <td style={{ width: "10%", border: "1px solid black" }}>반</td>
+            <td
+              style={{
+                width: "5%",
+                borderBottom: "1px solid black",
+                textAlign: "center",
+                padding: "5px",
+              }}
+            ></td>
+            <td
+              style={{
+                width: "55%",
+                borderBottom: "1px solid black",
+                textAlign: "center",
+                padding: "5px",
+              }}
+            >
+              과제 명
+            </td>
+            <td
+              style={{
+                width: "35%",
+                borderBottom: "1px solid black",
+                textAlign: "center",
+                padding: "5px",
+              }}
+            >
+              과제 강
+            </td>
+            <td
+              style={{
+                width: "15%",
+                borderBottom: "1px solid black",
+                textAlign: "center",
+                padding: "5px",
+              }}
+            >
+              반
+            </td>
           </tr>
         </thead>
         <tbody>
@@ -23,14 +56,6 @@ export default function SubjectList() {
           </tr>
         </tbody>
       </table>
-
-      <Button
-        sizeStyles="md"
-        colorTheme="pink"
-        disabled={false}
-        onClick={() => console.log("hi")}
-        buttonName={"gg"}
-      />
     </div>
   );
 }
