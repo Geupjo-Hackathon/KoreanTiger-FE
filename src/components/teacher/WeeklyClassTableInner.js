@@ -7,8 +7,6 @@ export default function WeeklyClassTable() {
   return (
     <tbody>
       {schedule.map((scheduleItemGroup) => {
-        console.log(scheduleItemGroup.name); // 이 위치에 로그를 두세요.
-
         return (
           <tr key={scheduleItemGroup.id}>
             <td

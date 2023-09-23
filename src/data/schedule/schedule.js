@@ -5,6 +5,4 @@ module.exports = [
   { id: "4", name: "4교시" },
   { id: "5", name: "5교시" },
   { id: "6", name: "6교시" },
-  { id: "7", name: "7교시" },
-  { id: "8", name: "8교시" },
 ];
