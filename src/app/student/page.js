@@ -20,14 +20,14 @@ export default function Home() {
       <div className="col-span-1 row-span-3 p-[0.8rem]">
         <Learning />
       </div>
-      <div className="col-span-1 row-span-1 px-[0.8rem] pb-[0.8rem]">
+      <div className="col-span-1 row-span-1 px-[0.8rem] pb-[0.8rem] h-[10rem]">
         <Alert />
         <Attendance />
       </div>
       <div className="col-span-1 row-span-2 p-[0.8rem]">
         <Ranking />
       </div>
-      <div className="col-span-1 row-span-3 p-[0.8rem]">
+      <div className="col-span-1 row-span-3 p-[0.8rem] h-[25.5rem] mt-[1rem]">
         <Progress />
       </div>
       <div className="col-span-2 row-span-2 p-[0.8rem]">
