@@ -42,7 +42,7 @@ const Hexagon = () => {
         backgroundColor: "white",
       }}
     >
-      <p className="text-lg">영역별 분석</p>
+      <p className="text-lg text-xl font-bold">영역별 분석</p>
       <div className="h-[18rem] mt-4">
         <RadarChart />
       </div>

@@ -42,7 +42,7 @@ const Score = () => {
         backgroundColor: "white",
       }}
     >
-      <p className="text-lg">영역별 분석</p>
+      <p className="text-lg font-bold">영역별 분석</p>
       <div className="h-[20rem] mt-4">
         <LineChart />
       </div>
