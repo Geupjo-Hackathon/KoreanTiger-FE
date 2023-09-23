@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // Component
 import { Button } from "@/stories/Button";
 // Style
-import { color } from "chart.js/helpers";
+import color from "@/tailwind-theme/color";
 
 const Learning = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -17,8 +17,8 @@ const Learning = () => {
 
   return (
     <div
-      className="w-full h-full flex flex-col justify-between p-4"
-      style={{ backgroundColor: "white" }}
+      className="w-full h-full flex flex-col justify-between p-4 border-2 rounded-md"
+      style={{ backgroundColor: "white", borderColor: color.hover_D9C3F1 }}
     >
       <div className="h-1/4 flex flex-col justify-between p-2">
         <p className="text-xl">나의 마지막 학습</p>
