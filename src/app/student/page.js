@@ -6,7 +6,7 @@ import Attendance from "@/components/student/main/Attendance";
 import Ranking from "@/components/student/main/Ranking";
 import Progress from "@/components/student/main/Progress";
 import Timeline from "@/components/student/main/Timeline";
-import Test from "@/components/student/main/Test";
+import Badge from "@/components/student/main/Badge";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
         <Timeline />
       </div>
       <div className="col-span-1 row-span-1 flex flex-row p-[0.8rem]">
-        <Test />
+        <Badge />
       </div>
     </div>
   );
